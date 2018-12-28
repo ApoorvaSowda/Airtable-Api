@@ -1,0 +1,18 @@
+<section class="get">
+    <h3>Get Data</h3>
+    <a href="/insert">INSERT</a>
+
+    <div>
+        {{# each items }}
+        <article class="item">
+            <div>Name: {{ this.Name }}</div>
+            <div>Address: {{ this.Address }}</div>
+            <div>Gender: {{ this.Gender }}</div>
+            <div>ID: {{ this.id }}</div>
+            <a href="/update/{{this.id}}">UPDATE</a>
+            <a href="/delete/{{this.id}}">DELETE</a>
+
+        </article>
+        {{/each}}
+    </div>
+</section>
